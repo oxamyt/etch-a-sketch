@@ -1,0 +1,20 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 532px;
+    height: 532px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+#container > div{
+    margin: 0;
+    border: 1px solid grey;
+    width: 31.25px;
+    height: 31.25px;
+}
