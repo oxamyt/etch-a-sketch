@@ -20,6 +20,7 @@ function addHoverEventListeners() {
     });
 }
 
+// placeholder grid
 createDivs(100);
 addHoverEventListeners();
 
@@ -46,6 +47,7 @@ button.addEventListener('click', () => {
     }
 });
 
+// Grid Change Calculations function
 function gridCalc(ask) {
     const containerWidth = container.clientWidth;
     const containerHeight = container.clientHeight;
