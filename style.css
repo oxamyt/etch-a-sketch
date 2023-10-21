@@ -8,6 +8,7 @@
     border: 2px solid black;
     width: 532px;
     height: 532px;
+    background-color: aliceblue;
 }
 body{
     display: flex;
@@ -17,6 +18,7 @@ body{
     height: 1000px;
     margin: 0;
     padding: 0;
+    background-color:whitesmoke;
 }
 
 #container > div{
