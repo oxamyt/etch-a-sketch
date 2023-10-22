@@ -29,6 +29,10 @@ body{
     overflow: hidden;
 }
 
+#random{
+    background: linear-gradient(to right, red, green, blue);
+}
+
 .btn{
     margin-bottom: 100px;
 }

@@ -15,10 +15,36 @@ function addHoverEventListeners() {
     const divs = document.querySelectorAll('.conts');
     divs.forEach(div => {
         div.addEventListener('mouseover', () => {
-            div.style.backgroundColor = 'pink';
+            div.style.backgroundColor = `pink`;
         });
     });
 }
+
+// random button
+const random = document.querySelector(`#random`)
+random.addEventListener ('click', () =>{
+    const divs = document.querySelectorAll('.conts');
+    divs.forEach(div => {
+        div.addEventListener('mouseover', () => {
+            const [r, g, b] = randomColor();
+            div.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+            console.log (randomColor())
+        });
+    });
+})
+
+// reset button
+const reset = document.querySelector('#reset');
+reset.addEventListener('click', () =>{
+    const divs = document.querySelectorAll('.conts');
+    divs.forEach(div => {
+        div.addEventListener('mouseover', () => {
+            div.style.backgroundColor = `pink`;
+        });
+    });
+})
+
+
 
 // placeholder grid
 createDivs(100);
@@ -30,6 +56,20 @@ function removeDivs() {
     divs.forEach(div => {
         container.removeChild(div);
     });
+}
+
+// Random integer function
+function randomInteger(max){
+    return Math.floor(Math.random() * (max + 1))
+
+}
+
+// Random color function
+function randomColor (){
+    let r = randomInteger(255);
+    let g = randomInteger(255);
+    let b = randomInteger(255);
+    return [r,g,b]
 }
 
 // Button event
